@@ -1,0 +1,232 @@
+.hero{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, 
+    rgba(47, 48, 58, 0.8), 
+    rgba(47, 48, 58, 0.8)),
+    url('../img/hero.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position: contain;
+   background-color: blanchedalmond;
+
+     
+}
+
+.hero__logo{
+    width: 646px;
+    margin: 0px 477px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px ;
+}
+
+.hero__title{
+    margin-bottom: 46px;
+
+    color:var(--title-text-decoration);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; 
+}
+
+.hero__button{
+    color: var(--title-text-decoration);
+    background-color: var(--accent-color);
+
+    display: inline-block;
+
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 200px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
+.advantages {
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.advantage__hidden-header{
+    position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+    overflow: hidden;
+    
+    background: var(--main-bg-decoration);
+}
+
+.advantage-list{
+    display: flex;
+}
+
+.advantage__item{
+    width: calc((100% - 90px) / 4);
+}
+
+.advantage__item::before{
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    
+    background-color: var(--team-bg-decoration);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.advantage--icon-locator::before{
+    background-image: url(../img/locator.svg);
+}
+
+.advantage--icon-clock::before{
+    background-image: url(../img/clock.svg);
+}
+
+.advantage--icon-computer::before{
+    background-image: url(../img/computer.svg);
+}
+
+.advantage--icon-astronaut::before{
+    background-image: url(../img/astronaut.svg);
+}
+
+.advantage__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.advantages__header{
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;  
+}
+
+.advantages__text{
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.occupation{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.occupation__list{
+    display: flex;
+}
+
+.occupation__item{
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.occupation__item:not(:last-child)  {
+    margin-right: 30px;
+}
+
+.occupation__text{
+    text-align: center;
+    padding: 27px 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.occupation__link{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: var(--title-text-decoration);
+    text-transform: uppercase;
+}
+
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.team__list{
+    display: flex;
+}
+
+.team__header{
+    margin-bottom: 50px;
+}
+
+.team__header,
+.team{
+    background-color: var(--team-bg-decoration);
+}
+
+.team__item{
+    padding-bottom: 24px;
+    width: calc((100%-90px) / 4);
+}
+
+.team__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.team__name{
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary-text-decoration);
+}
+
+.team__text{
+    margin-bottom: 16px;    
+
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.customers{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: var(--main-bg-decoration);
+}
+
+.customers__header{
+    padding-bottom: 50px;
+    
+    background: var(--main-bg-decoration);
+}
+
+.customers__list{
+    display: flex;
+}
+
+.customers__item {
+    width: calc((100%-180px) / 6);
+}
+
+.customers__item:not(:last-child){
+    margin-right: 30px;
+}
+
