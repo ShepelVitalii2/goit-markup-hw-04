@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--header-->
-    <header class="header">
+    <header>
         <div class="page-header border-box">
             <nav class="page-header__nav">
                 <a href="" class="page-header__logo"> 
@@ -22,21 +22,31 @@
                     Studio 
                 </a>
                 <ul class="page-header__nav-list">
-                    <li class="nav__item"><a href="./index.html" class="nav__link-current">Студия</a></li>
-                    <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
+                    <li class="nav__item"><a href="./portfolio.html" class="nav__link-current">Портфолио</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="page-header-contacts">
                 <li class="page-header__contacts-item">
+                    
                     <a href="mailto:info@devstudio.com" class="page-header__contacts-link">
-                        <img src="./img/vector(envelope).svg" alt="конверт">
+                        <svg class="page-header__icon-mail">
+                            <use href="./img/symbol-defs.svg#icon-mail">
+
+                            </use>
+                        </svg>    
                         info@devstudio.com
                     </a>
                 </li>
                 <li class="page-header__contacts-item">
+
                     <a href="tel:+380961111111" class="page-header__contacts-link">
-                        <img src="./img/vector(phone).svg" alt="телефон">
+                        <svg class="page-header__icon-phone">
+                            <use href="./img/symbol-defs.svg#icon-phone">
+
+                            </use>
+                        </svg> 
                         +38 096 111 11 11
                     </a>
                 </li>
@@ -49,7 +59,7 @@
         <section class="main__container">
 
              <div class="border-box">
-                <h1 class="main__header">Поиск проектов</h1>
+                <h1 class="main__header visually-hidden">Поиск проектов</h1>
                     <ul class="main__nav">
                         <li class="main__nav-item"><button type="button" class="button-secondary">Все</button></li>
                         <li class="main__nav-item"><button type="button" class="button-secondary">Веб-сайты</button></li>
@@ -59,7 +69,7 @@
                     </ul>
             
             <!-- project-list -->
-                <h2 class="project__header">Список проектов</h2>
+                <h2 class="project__header visually-hidden">Список проектов</h2>
                 <ul class="project__list">
                     <li class="project__item">
                         <a href="#">
@@ -224,18 +234,42 @@
             <div class="appeal-container">
                 <b class="page-footer__appeal">присоединяйтесь</b>
                 
-                <ul class="social-links social-list">
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на инстаграм">Инс</a>
+                <ul class="social-list">
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на инстаграм " class="social-list__item">
+                            <svg class="footer__link-icon">
+                                <use 
+                                    href="./img/symbol-defs.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на твитер">Тви</a>
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на твитер " class="social-list__item">
+                            <svg class="footer__link-icon">
+                                <use 
+                                    href="./img/symbol-defs.svg#icon-twitter">
+                                </use>
+                            </svg> 
+                        </a>
                     </li>
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на фейсбук">ФБ</a>
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на фейсбук" class="social-list__item">
+                            <svg class="footer__link-icon">
+                                <use 
+                                    href="./img/symbol-defs.svg#icon-facebook">
+                                </use>
+                            </svg> 
+                        </a>
                     </li>
-                    <li>
-                        <a href="" class="page-footer__social-links" aria-label="ссылка на ЛинкдИн">Лнкд</a>
+                    <li class="social__item">
+                        <a href="" aria-label="ссылка на линекдИн" class="social-list__item">
+                            <svg class="footer__link-icon">
+                                <use 
+                                    href="./img/symbol-defs.svg#icon-linkedin">
+                                </use>
+                            </svg> 
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -244,6 +278,12 @@
 
             <a href="" class="footer-button button">
                 Подписаться
+                <svg class="footer__icon-send">
+                    <use
+                    href="./img/symbol-defs.svg#icon-send">
+
+                    </use>
+                </svg>
             </a>
             
             

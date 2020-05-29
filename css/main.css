@@ -16,11 +16,8 @@
 }
 
 .hero__logo{
-    width: 646px;
-    margin: 0px 477px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px ;
+    padding: 200px 452px;
 }
 
 .hero__title{
@@ -51,23 +48,10 @@
 }
 
 .advantages {
-    letter-spacing: 0.03em;
+    
     padding-top: 94px;
     padding-bottom: 94px;
     border-bottom: 1px solid #ECECEC;
-}
-
-.advantage__hidden-header{
-    position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-    overflow: hidden;
-    
-    background: var(--main-bg-decoration);
 }
 
 .advantage-list{
@@ -78,32 +62,20 @@
     width: calc((100% - 90px) / 4);
 }
 
-.advantage__item::before{
-    display: inline-block;
-    content: "";
-    width: 270px;
+.advantage__icon-bg{
     height: 120px;
     border-radius: 4px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--team-bg-decoration);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+
+    margin-bottom: 30px;
 }
 
-.advantage--icon-locator::before{
-    background-image: url(../img/locator.svg);
-}
-
-.advantage--icon-clock::before{
-    background-image: url(../img/clock.svg);
-}
-
-.advantage--icon-computer::before{
-    background-image: url(../img/computer.svg);
-}
-
-.advantage--icon-astronaut::before{
-    background-image: url(../img/astronaut.svg);
+.advantages--icon{
+    width: 70px;
+    height: 70px;
 }
 
 .advantage__item:not(:last-child){
@@ -111,6 +83,7 @@
 }
 
 .advantages__header{
+    
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
@@ -118,14 +91,24 @@
 }
 
 .advantages__text{
+    display: block;
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .occupation{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.occupation-header{
+    margin-bottom: 50px;
+    display: block;
+
+    /* padding-top: 32px; */
+    /* padding-bottom: 32px */
 }
 
 .occupation__list{
@@ -180,6 +163,12 @@
 .team__item{
     padding-bottom: 24px;
     width: calc((100%-90px) / 4);
+
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .team__item:not(:last-child){
@@ -206,15 +195,133 @@
     color: var(--secondary-text-color);
 }
 
+.team__social-list{
+    display: flex;
+    padding: 0px 32px;
+}
+
+
+.team__social-icon:not(:last-child){
+    margin-right: 10px;
+}
+
+.team__social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+}
+
+.team__social-link:hover
+{
+    color: var(--title-text-decoration);
+    background-color: var(--accent-color);
+}
+
+.team__icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* .team__icon:hover{
+    fill: var(--title-text-decoration);
+    background-color: var(--accent-color);
+} */
+
 .customers{
     padding-top: 94px;
     padding-bottom: 94px;
     background: var(--main-bg-decoration);
 }
 
+.customers__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;  
+}
+
+.customers-one__logo:hover,
+.customers-two__logo:hover,
+.customers-three__logo:hover,
+.customers-four__logo:hover,
+.customers-five__logo:hover,
+.customers-six__logo:hover
+{
+    fill: var(--accent-color);
+}
+
+.customers-one__size{
+    padding: 20px 59px;
+}
+
+.customers-one__logo{
+    width: 45px;
+    height: 50px;
+    fill: #AFB1B8; 
+}
+
+.customers-two__size{
+    padding: 19px 62px;
+}
+
+.customers-two__logo{
+    width: 40px;
+    height: 52px;
+    fill: #AFB1B8;
+}
+
+.customers-three__size{
+    padding: 23px 60px;
+}
+
+.customers-three__logo{
+    width: 42px;
+    height: 44px;
+    fill: #AFB1B8;
+}
+
+.customers-four__size{
+    padding: 24px 42px;
+}
+
+.customers-four__logo{
+    width: 80px;
+    height: 42px;
+    fill: #AFB1B8;
+}
+
+.customers-five__size{
+    padding: 21.5px 50px;
+}
+
+.customers-five__logo{
+    width: 59px;
+    height: 47px;
+    fill: #AFB1B8;
+}
+
+.customers-six__size{
+    padding: 22.5px 36px;
+}
+
+.customers-six__logo{
+    width: 89px;
+    height: 45px;
+    fill: #AFB1B8;
+}
+
+
+
 .customers__header{
     padding-bottom: 50px;
-    
     background: var(--main-bg-decoration);
 }
 

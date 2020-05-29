@@ -17,6 +17,9 @@
 
 }
 /* COMMON */
+
+
+
 a {
     color: var(--primary-text-decoration);
     text-decoration: none;
@@ -48,14 +51,31 @@ img {
     max-width: 100%;
     height: auto;
 }
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 /* HEADER */
 
-.header{
+.header{    
     
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
+
     color: var(--primary-text-decoration);
     background-color: var(--title-text-decoration);
 }
@@ -117,7 +137,8 @@ img {
 }
 
 .nav__link:hover,
-.nav__link:focus {
+.nav__link:focus,
+.page-header__contacts-link:hover{
     color: var(--accent-color);
 
 }
@@ -144,7 +165,25 @@ img {
     color: var(--secondary-text-color);
 }
 
-.page-header__contacts-link--envelope::before{
+.page-header__contacts-link:focus{
+    color:var(--accent-color);
+}
+
+.page-header__icon-mail{
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.page-header__icon-phone{
+    width: 10px;
+    height: 14px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/* .page-header__contacts-link--envelope::before{
     content: "";
     min-width: 16px;
     height: 12px;
@@ -161,7 +200,7 @@ img {
     margin-right: 10px;
     background-image: url(../img/phone.svg);
     background-size: contain;
-}
+} */
 
 /* FOOTER */
 
@@ -229,12 +268,14 @@ img {
     color:var(--title-text-decoration);
 }
 
-/* СОКИАБЛЭ тэхт энд пикчерс */
+.footer__icon-send{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: currentColor;
+}
 
-/* .social-links .page-footer__social-links:hover,
-.social-links .page-footer__social-links:focus{
-    color: var(--accent-color);
-} */
+/* СОКИАБЛЭ тэхт энд пикчерс */
 
 .social-list{
     display: flex;
@@ -244,28 +285,22 @@ img {
     margin-right: 10px;
 }
 
-.social-icon__instagram{
-    
-    background-image: url(../img/linkInstagram.svg);
-    
+.footer__link-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--nav-bg-decoration);
 }
 
-.social-icon__twiter{
-    background-image: url(../img/linkTwiter.svg);
+.social-list__item:hover{
+    color: var(--title-text-decoration);
+    background-color: var(--accent-color);
 }
-
-.social-icon__facebook{
-    background-image: url(../img/linkFacebook.svg);
-}
-
-.social-icon__linkedin{
-    background-image: url(../img/linkLinked.svg);
-}
-
-
 
 .social-list__item{
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     width: 44px;
     height: 44px;
@@ -274,11 +309,7 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     
     background-repeat: no-repeat;
-    background-position: center;
-    
-    
-
-    
+    background-position: center; 
 }
 
 .social-list .social-pics{
@@ -345,23 +376,31 @@ img {
 
 .footer-button{
     display: inline-flex;
+    align-items: center;
 
-    padding: 8px 43px;
-    border: 2px solid var(--team-bg-decoration);
+    color: var(--title-text-decoration);
+    background-color: var(--accent-color);
+    border-color:  var(--accent-color);
+
+    padding: 8px 25px;
     border-radius: 4px;
     vertical-align: middle;
     min-width: 200px;
 }
 
-.footer-button--icon-plane::after{
+.footer-button:hover{
+    color: var(--primary-text-decoration);
+}
+
+/* .footer-button--icon-plane::after{
     content: "";
     min-width: 24px;
     height: 24px;
     margin-left: 10px;
-    background-image: url(../img/iconSend.svg);
+    background-image: url(../img/plane.svg);
     background-color: #2196F3;
     background-size: contain;
-}
+} */
 
 .button-secondary{
     display: inline-block;
@@ -381,7 +420,7 @@ img {
 
 .button:hover,
 .button:focus{
-    color: var(--title-text-decoration);
+    color: var(--primary-text-decoration);
     background-color: var(--accent-color);
     border-color:  var(--accent-color);
 }
@@ -396,25 +435,11 @@ img {
 /* Разметка */
 
 .border-box{
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* Header */
-
-.occupation .header{
-    margin-bottom: 50px;
-
-    display: block;
-
-    padding-top: 32px;
-    padding-bottom: 32px
-}
-
-
 
