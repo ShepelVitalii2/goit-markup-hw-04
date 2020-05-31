@@ -9,19 +9,23 @@
     url('../img/hero.jpg');
    background-repeat: no-repeat;
    background-position: center;
-   background-position: contain;
+   /* background-position: contain; */
    background-color: blanchedalmond;
+   background-size: cover;
 
      
 }
 
 .hero__logo{
+    display: block;
     text-align: center;
-    padding: 200px 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 696px;
 }
 
 .hero__title{
-    margin-bottom: 46px;
+    margin-bottom: 30px;
 
     color:var(--title-text-decoration);
     font-weight: 900;
