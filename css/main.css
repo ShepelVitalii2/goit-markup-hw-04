@@ -1,5 +1,5 @@
 .hero{
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -238,7 +238,6 @@
 .customers{
     padding-top: 94px;
     padding-bottom: 94px;
-    background: var(--main-bg-decoration);
 }
 
 .customers__link{
@@ -246,21 +245,19 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
-    box-sizing: border-box;
+    fill: #AFB1B8;
     border-radius: 4px;  
 }
 
-.customers__logo:hover
+
+.customers__link:hover
 {
     fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .customers-one__size{
     padding: 20px 59px;
-}
-
-.customers__logo{
-    fill: #AFB1B8; 
 }
 
 .customers-two__size{
@@ -285,7 +282,6 @@
 
 .customers__header{
     padding-bottom: 50px;
-    background: var(--main-bg-decoration);
 }
 
 .customers__list{
